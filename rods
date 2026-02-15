@@ -33,6 +33,11 @@ local module = {
         Color = "0.960784, 0.803922, 0.188235";
         Control = 0.3;
         Description = "Forged in the darkest depths of the ocean's trenches, this spectral rod radiates an otherworldly strength. Its phantom line reaches impossible depths, while its ghostly power grants the ability to haul in catches that would snap lesser rods. All fish are 20% larger, & have a 25% chance to be Abyssal.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
+        Disturbance = 1;
         EnhancementPatches = {
             Mastery1 = {
                 MutationPool = {
@@ -84,13 +89,14 @@ local module = {
         };
         Icon = "rbxassetid://116188852014501";
         LineDistance = math.huge;
-        Luck = 200;
-        LureSpeed = 100;
+        Luck = 300;
+        LureSpeed = 0;
         MutationPool = {
             Abyssal = 30
         };
         Price = math.huge;
-        Resilience = 25;
+        ProgressEfficiency = 0.5;
+        Resilience = 40;
         Strength = math.huge;
         Unpurchasable = true;
         Unregistered = true;
@@ -132,7 +138,7 @@ local module = {
         Color = "0.956863, 0.615686, 0.827451";
         Control = 0.7;
         DEV = true;
-        Description = "(っ҂ •)っ poison, or antidote ? [For @kittydiets - lea]";
+        Description = "(っ҂ •)っ poison, or antidote ? [For @taiyakos - lea]";
         Icon = "rbxassetid://96738548007381";
         LineDistance = 333;
         Luck = 333;
@@ -155,6 +161,11 @@ local module = {
         Color = "0.560784, 0.270588, 0.133333";
         Control = 0.5;
         Description = "A heavy anchor covered with rust and wrapped in chains; Always hauls in several catches, but the weight slows your reeling progress.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
+        Disturbance = 3;
         FishingPassives = {
             Anchor_N_Chain = {
                 MutationPool = {
@@ -169,6 +180,10 @@ local module = {
         LineDistance = 50;
         Luck = 50;
         LureSpeed = 200;
+        PreferredDisturbance = {
+            Event = "Plesiosaur";
+            Risk = 2
+        };
         Price = math.huge;
         ProgressEfficiency = -0.1;
         Resilience = 100;
@@ -201,6 +216,10 @@ local module = {
         Color = "0.603922, 0.666667, 0.745098";
         Control = 0.06;
         Description = "A white rod with frost effects and a cool blue glow, all fish become Frozen.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Overgrowth Caves";
         Hint = "Purchasable at the bottom of the Northern Expedition.";
         Icon = "rbxassetid://114306834665619";
@@ -238,6 +257,7 @@ local module = {
         Color = "1, 0.54902, 0";
         Control = 0.3;
         Description = "🌌";
+        Disturbance = 1;
         EnhancementPatches = {
             Mastery1 = {
                 FishingPassives = {
@@ -256,7 +276,7 @@ local module = {
         Hint = "Obtained from Astraeus.";
         Icon = "rbxassetid://76677925964888";
         LineDistance = 250;
-        Luck = 400;
+        Luck = 300;
         LureSpeed = 0;
         MutationPool = {
             Astraeus = 15;
@@ -339,6 +359,10 @@ local module = {
         Color = "0.580392, 0.0745098, 0.168627";
         Control = 0.05;
         Description = "A rod forged with many valuable gemstones. Fish caught with this rod have a random sell value between 2-4x.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         From = "Ocean";
         Hint = "Rarely obtained from Sunken Chests.";
         Icon = "rbxassetid://88108322219787";
@@ -366,6 +390,10 @@ local module = {
         Color = "0.180392, 1, 0.72549";
         Control = 0.06;
         Description = "Enhanced by the Aurora Borealis' energy. All fish have a 15% chance to have the Aurora mutation.\nChances increase to 30% during the Aurora Borealis.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         EnhancementPatches = {
             Mastery1 = {
                 FishingPassives = {
@@ -422,6 +450,10 @@ local module = {
         Color = "0.603922, 0.666667, 0.745098";
         Control = 0.15;
         Description = "A sleek rod with an icy blue spiral design and glowing blue accents, has a 25% chance for fish to be covered in Sleet.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Frigid Cavern";
         Hint = "Purchasable at the Frigid Cavern.";
         Icon = "rbxassetid://105820430399819";
@@ -458,6 +490,10 @@ local module = {
         Color = "0.239216, 0.278431, 1";
         Control = -0.01;
         Description = "Its delicate form belies a sharp, cutting force with an almost eerie precision. All caught fish become Glossy, & has a chance to slash fish.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Lost Jungle";
         Hint = "Purchasable at the Lost Jungle after completing 85% of the bestiary.";
         Icon = "rbxassetid://74803712156841";
@@ -516,6 +552,7 @@ local module = {
         Resilience = 30;
         Strength = 200000;
         Unpurchasable = true;
+        Unregistered = true;
     };
     ["Blade Of Glorp"] = {
         BobberBottom = "0.631373, 1, 0.34902";
@@ -534,6 +571,11 @@ local module = {
         Color = "0.741176, 1, 0.32549";
         Control = 0.05;
         Description = "A sharp Blade & friendly UFO crafted by Glorp harnesses the power of Lasers. Be careful, it is hot and will melt your hands if touched. [For @uhvanni]";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
+        Disturbance = 2;
         EnhancementPatches = {
             Mastery1 = {
                 ClientFishingPassives = {
@@ -560,12 +602,12 @@ local module = {
                 UFO_DISTANCE = 2
             }
         };
-        From = "Roslit Bay";
+        From = "Roslit";
         Hint = "Obtained from Glorp.";
         Icon = "rbxassetid://113934986272654";
         LevelRequirement = 888;
         LineDistance = 100;
-        Luck = 888;
+        Luck = 288;
         LureSpeed = 0;
         MutationPool = {
             Gleebous = 23
@@ -587,6 +629,10 @@ local module = {
         Color = "1, 0.533333, 0";
         Control = 0.15;
         Description = "A flaming rod with power that builds with every perfect catch, yielding a variety of unique mutations & a luck boost.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         FishingPassives = {
             Generic_TieredBoosts = {
                 AllowRefresh = true;
@@ -670,6 +716,10 @@ local module = {
         Color = "0.258824, 0.207843, 0.203922";
         Control = 0.05;
         Description = "A frostbitten rod carved from northern pines, imbuing catches with quiet, creeping cold.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Boreal Pines";
         Hint = "Purchasable at Boreal Pines.";
         Icon = "rbxassetid://80907973781207";
@@ -702,6 +752,7 @@ local module = {
         Resilience = 10;
         Strength = 200;
         Unpurchasable = true;
+        Unregistered = true;
     };
     ["Brick Rod"] = {
         BobberBottom = "0.239216, 0.137255, 0.137255";
@@ -709,6 +760,10 @@ local module = {
         Color = "0.960784, 0.352941, 0.352941";
         Control = 0.35;
         Description = "Wait.. it's real?";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 250
+}};
         Hint = "A series of bricks...";
         Icon = "rbxassetid://91667481081888";
         LineDistance = 200;
@@ -717,9 +772,40 @@ local module = {
         MutationPool = {
             Studded = 100
         };
+        NotLimited = true;
         Price = 13337;
         Resilience = 35;
         Strength = math.huge;
+        Unregistered = true;
+    };
+    ["Brine-Infused Rod"] = {
+        BobberBottom = "0.247059, 0.247059, 0.247059";
+        BobberTop = "0.278431, 1, 0.698039";
+        Color = "0.207843, 1, 0.698039";
+        Control = 0;
+        Description = "The Brine-Infused Rod was designed by a researcher who studied the Brine Pool for a living; it was kept as a secret until he mysteriously went missing... The rod has a 50% chance to grant the Brined mutation.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
+        Disturbance = 1;
+        Durability = 200;
+        From = "Brine Pool";
+        Hint = "Purchasable near the heights of the Brine Pool; a very difficult reach.";
+        Icon = "rbxassetid://138793509414691";
+        LineDistance = 20;
+        Luck = 50;
+        LureSpeed = 60;
+        MutationPool = {
+            Brined = 50
+        };
+        PreferredDisturbance = {
+            Event = "BrineStorm";
+            Risk = 5
+        };
+        Price = 15000;
+        Resilience = 350;
+        Strength = 650000;
     };
     ["Brother's Rod"] = {
         BobberBottom = "0.690196, 1, 0.964706";
@@ -742,6 +828,7 @@ local module = {
         Price = math.huge;
         Resilience = 10;
         Strength = 3000;
+        Unregistered = true;
     };
     ["Buddy Bond Rod"] = {
         BobberBottom = "0.133333, 0.207843, 0.258824";
@@ -794,6 +881,10 @@ local module = {
         Color = "0.607843, 0.745098, 1";
         Control = 0.05;
         Description = "Stiff, strong, and easier to handle than other rods out there, however it is slightly shorter.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 100
+}};
         From = "Moosewood";
         Hint = "Purchasable at Moosewood.";
         Icon = "rbxassetid://101118771958506";
@@ -814,6 +905,10 @@ local module = {
         Color = "1, 0.686275, 0.14902";
         Control = 0.15;
         Description = "Rich in nutrients!";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 900
+}};
         FishingPassives = {
             CarrotRod = {
                 Duration = 60;
@@ -841,6 +936,10 @@ local module = {
         Color = "0.0745098, 0.568627, 1";
         Control = 0.21;
         Description = "After catching 15 fish, summon Celestial powers for 2 minutes, granting +100% Luck & +60% Lure Speed. Caught fish also get the Celestial mutation & +50% XP on them!";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         FishingPassives = {
             CelestialPower = {
                 PassiveBoosts = {
@@ -866,6 +965,43 @@ local module = {
         Strength = 350000;
         Unpurchasable = true;
     };
+    Cerebra = {
+        BobberBottom = "1, 0.129412, 0.65098";
+        BobberTop = "1, 1, 1";
+        ClientFishingPassives = {
+            Generic_Slashes = {
+                GradientColor = "1, 0, 0.517647";
+                IconName = "Default";
+                SlashChance = 30;
+                SlashDamage = 6;
+                SoundName = "stabbystab";
+                SourceName = "Cerebra";
+                SourceType = "rod";
+                StunTime = 0.35;
+                TriggerMode = "FishMove"
+            }
+        };
+        Color = "1, 0.0784314, 0.568627";
+        Control = 0.2;
+        Description = "❤️";
+        From = "Valentides 2";
+        Hint = "Obtainable during Valentides 2.";
+        Icon = "rbxassetid://101466087041681";
+        LineDistance = 15;
+        Luck = 95;
+        LureSpeed = -100;
+        MutationPool = {
+            Heartburst = 10
+        };
+        Price = math.huge;
+        ProgressEfficiency = 0.22;
+        ReelGuiName = "cerebra";
+        Resilience = 50;
+        Strength = 50000;
+        Unpurchasable = true;
+        Unregistered = true;
+        WeightBoost = 22;
+    };
     ["Cerulean Fang Rod"] = {
         BobberBottom = "0.501961, 0.733333, 0.858824";
         BobberTop = "0.0156863, 0.686275, 0.92549";
@@ -885,6 +1021,11 @@ local module = {
         Color = "0.0156863, 0.686275, 0.92549";
         Control = 0.25;
         Description = "Swift as the spirits, this rod carves through the sea with rapid, cutting precision; its fangs strike fast and unrelenting.\nHas a 15% chance for the Nova mutation.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
+        Disturbance = 2;
         From = "Luminescent Cavern";
         Hint = "Purchasable at Level 400 within the Luminescent Cavern during Starfall weather.";
         Icon = "rbxassetid://132107415023879";
@@ -906,6 +1047,10 @@ local module = {
         Color = "0.0156863, 0.686275, 0.92549";
         Control = 0.2;
         Description = "An ice-imbued rod for the most dedicated fishers.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 3000
+}};
         From = "Challenger's Deep";
         Hint = "Purchasable at Challenger's Deep after reaching Level 110.";
         Icon = "rbxassetid://126389416835551";
@@ -926,6 +1071,10 @@ local module = {
         Color = "0.960784, 0.803922, 0.188235";
         Control = 0.25;
         Description = "Wielded by legendary tournament winners, this balanced rod embodies competitive excellence.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Atlantis";
         Hint = "Purchasable at central Atlantis.";
         Icon = "rbxassetid://76014690432382";
@@ -1003,11 +1152,16 @@ local module = {
         Color = "0.541176, 0.541176, 0.541176";
         Control = 0.7;
         Description = "seems a little heavy...";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
+        Disturbance = 3;
         From = "Ocean";
         Hint = "Purchasable at the Oil Rig.";
         Icon = "rbxassetid://70848292796768";
         LineDistance = 15;
-        Luck = 1000;
+        Luck = 350;
         LureSpeed = 150;
         MutationPool = {
             Cement = 70
@@ -1134,6 +1288,11 @@ local module = {
         Color = "1, 0.615686, 0.886275";
         Control = 0.02;
         Description = "Grown rather than crafted, this living coral rod hums with reefbound life; Has a 50% chance to grant the Coral mutation.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 800
+}};
+        Disturbance = 1;
         From = "Coral Bastion";
         Hint = "Purchasable at the Coral Bastion after completing 50% of the bestiary.";
         Icon = "rbxassetid://86145530693470";
@@ -1142,6 +1301,10 @@ local module = {
         LureSpeed = 28;
         MutationPool = {
             Coral = 50
+        };
+        PreferredDisturbance = {
+            Event = "ReefTitan";
+            Risk = 2
         };
         Price = 30000;
         ProgressEfficiency = 0.1;
@@ -1246,6 +1409,11 @@ local module = {
         Color = "0.454902, 0.952941, 1";
         Control = -0.1;
         Description = "A brutal cryogenic rod that hurls icicle spears at hooked prey, trading stability for explosive frozen progress.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 7500
+}};
+        Disturbance = 2;
         FishingPassives = {
             Cryolash = {
                 InitialDelay = 2;
@@ -1264,6 +1432,10 @@ local module = {
             Frozen = 50;
             Glacial = 15
         };
+        PreferredDisturbance = {
+            Event = "FrostwyrmHunt";
+            Risk = 4
+        };
         Price = 3500000;
         Resilience = 75;
         Strength = 150000;
@@ -1274,6 +1446,10 @@ local module = {
         Color = "0.603922, 0.666667, 0.745098";
         Control = 0.15;
         Description = "A luminous rod with a bright yellow glow and crystal-like effects. Has a 20% chance to Crystalize fish.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Overgrowth Caves";
         Hint = "Purchasable after completing the Ice Puzzle.";
         Icon = "rbxassetid://138826563269601";
@@ -1286,6 +1462,86 @@ local module = {
         Price = 35000;
         Resilience = 15;
         Strength = 25000;
+    };
+    ["Cupid's Bow"] = {
+        BobberBottom = "1, 0.635294, 0.980392";
+        BobberTop = "1, 0.94902, 0.662745";
+        ClientFishingPassives = {
+            ["Cupid's Bow"] = {
+            };
+            Generic_KillSimplified = {
+            }
+        };
+        Color = "1, 0.94902, 0.662745";
+        Control = -0.02;
+        Description = "Only obtainable during Valentides;\nA divine arrow strung with love, striking twice when destiny allows.";
+        FishingPassives = {
+            Generic_DuplicateFish = {
+                DuplicateChance = 20
+            }
+        };
+        From = "Valentides 2";
+        Hint = "Obtainable during Valentides 2.";
+        Icon = "rbxassetid://93717720159219";
+        LineDistance = 500;
+        LocalCurrency = "Chocolates";
+        Luck = 125;
+        LureSpeed = -20;
+        MutationPool = {
+            Heartburst = 10;
+            Lovestruck = 60
+        };
+        Price = 25000;
+        ProgressEfficiency = 0.3;
+        ReelGuiName = "cupidsbow";
+        Requirements = {
+            PlayerAttributes = {{
+    ExpectedValue = true;
+    FailMessage = "💔";
+    Name = "ReachedCupidsIsland"
+}}
+        };
+        Resilience = -5;
+        Strength = math.huge;
+        Unregistered = true;
+    };
+    ["Cupid's Embrace"] = {
+        BobberBottom = "1, 0.909804, 0.756863";
+        BobberTop = "1, 0.6, 0.827451";
+        ClientFishingPassives = {
+            CupidsEmbrace = {
+                HeartInterval = 1;
+                PartnerProgressBoost = 0.25;
+                ProgressSpeedDecayRate = 0.02;
+                ProximityRange = 25;
+                ResilienceGainRate = 1.4
+            }
+        };
+        Color = "1, 0.6, 0.827451";
+        Control = 0.1;
+        Description = "Only obtainable during Valentides;\nA staff bound by fate, growing stronger when hearts and hooks align.";
+        FishingPassives = {
+            CupidsEmbrace = {
+                BoostedMutationPool = {
+                    Embraced = 40
+                };
+                MutationPool = {
+                    Embraced = 25
+                };
+                ProximityRange = 25
+            }
+        };
+        From = "Valentides 2";
+        Hint = "Obtainable during Valentides 2.";
+        Icon = "rbxassetid://134546072504759";
+        LineDistance = 30;
+        Luck = 214;
+        LureSpeed = 30;
+        Price = math.huge;
+        Resilience = 14;
+        Strength = 225000;
+        Unpurchasable = true;
+        Unregistered = true;
     };
     ["Dave Rod"] = {
         BobberBottom = "0.564706, 0.564706, 0.564706";
@@ -1313,6 +1569,45 @@ local module = {
         Unpurchasable = true;
         Unregistered = true;
     };
+    ["Daybreaker Rod"] = {
+        BestiaryRequirement = {
+            Island = "Scoria Reach";
+            Requirement = 50
+        };
+        BobberBottom = "0.176471, 0.160784, 0.117647";
+        BobberTop = "1, 0.894118, 0.470588";
+        Color = "1, 0.894118, 0.470588";
+        Control = -0.05;
+        Description = "An instrument of rising suns, the Daybreaker grows radiant in places of intense heat, reshaping fate as daylight strengthens its will.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2000
+}};
+        Disturbance = 2;
+        Durability = 100;
+        FishingPassives = {
+            Daybreaker = {
+                HOT_ZONE_STAT_MULT = 2;
+                SKIP_STATS = {"BaitEffectiveness", "TimeEffectiveness", "WeatherEffectiveness", "SeasonEffectiveness"};
+                SOLAR_BASE_CHANCE = 25
+            }
+        };
+        From = "Scoria Reach";
+        Hint = "Purchasable at the town located near the center of Scoria Reach.";
+        Icon = "rbxassetid://112148270617779";
+        LevelRequirement = 50;
+        LineDistance = 200;
+        Luck = 125;
+        LureSpeed = 30;
+        PreferredDisturbance = {
+            Event = "SkeletalLeviathanHunt";
+            Risk = 1
+        };
+        Price = 750000;
+        ProgressEfficiency = 0.15;
+        Resilience = 25;
+        Strength = math.huge;
+    };
     ["Dead Man's Rod"] = {
         BobberBottom = "0.0705882, 0.282353, 0.0823529";
         BobberTop = "0.486275, 0.458824, 0.447059";
@@ -1326,6 +1621,11 @@ local module = {
         Color = "0.0705882, 0.282353, 0.0823529";
         Control = 0;
         Description = "A rod possessed by the soul of Davy Jones [Developer Rod, for @Johnny_D3pp]";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
+        Disturbance = 4;
         FishingPassives = {
             ["Dead Man's Rod"] = {
             }
@@ -1355,6 +1655,7 @@ local module = {
         Control = 0;
         DEV = true;
         Description = "A rod ONLY for developers not to have to suffer in game-development.";
+        Disturbance = 5;
         Durability = math.huge;
         FishingPassives = {
             DebugStick = {
@@ -1365,6 +1666,10 @@ local module = {
         LineDistance = math.huge;
         Luck = 0;
         LureSpeed = 0;
+        PreferredDisturbance = {
+            Event = "MossjawHunt";
+            Risk = 10
+        };
         Price = math.huge;
         Resilience = 0;
         StartingProgress = 80;
@@ -1396,6 +1701,10 @@ local module = {
         Color = "0.156863, 0.517647, 0.960784";
         Control = 0.17;
         Description = "Engineered with deep-sea technology, this resilient rod thrives in challenging conditions.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Atlantis";
         Hint = "Purchasable at central Atlantis.";
         Icon = "rbxassetid://82391265345703";
@@ -1413,6 +1722,10 @@ local module = {
         Color = "1, 0.996078, 0.862745";
         Control = 0.2;
         Description = "The Destiny Rod pulses continuously with the pure essence of luck. (10% Higher chance of Shiny & Sparkling fish)";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
         EnhancementPatches = {
             Mastery1 = {
                 ProgressSpeed = 25
@@ -1477,6 +1790,11 @@ local module = {
         Color = "0.141176, 0.141176, 0.141176";
         Control = 0.23;
         Description = "A rod born of torment and twilight, empowering night fishing with violent surges and larger prey; but twisting the mind with slower progress and unpredictable control.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 8500
+}};
+        Disturbance = 4;
         EnhancementPatches = {
             Mastery1 = {
                 ProgressSpeed = 10
@@ -1510,6 +1828,10 @@ local module = {
         LineDistance = 30;
         Luck = 215;
         LureSpeed = -20;
+        PreferredDisturbance = {
+            Event = "The Sanctum Hunt";
+            Risk = 3
+        };
         Price = math.huge;
         ProgressEfficiency = 0.15;
         Resilience = 66;
@@ -1550,6 +1872,7 @@ local module = {
         Resilience = 80;
         Strength = 700000;
         Unpurchasable = true;
+        Unregistered = true;
     };
     Duskwire = {
         BobberBottom = "1, 1, 1";
@@ -1557,6 +1880,11 @@ local module = {
         Color = "0.235294, 0.235294, 0.235294";
         Control = -0.2;
         Description = "Intertwined with souls of the masses; a reminder that we are all human after all.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
+        Disturbance = 4;
         EnhancementPatches = {
             Mastery1 = {
                 FishingPassives = {
@@ -1651,6 +1979,7 @@ local module = {
         Price = math.huge;
         Resilience = 15;
         Strength = 20000;
+        Unregistered = true;
     };
     ["Eidolon Rod"] = {
         BobberBottom = "1, 1, 1";
@@ -1665,6 +1994,11 @@ local module = {
         Color = "0.223529, 0.223529, 0.223529";
         Control = 0.25;
         Description = "A spectral rod infused with phantom energy, hastening progress and drawing forth the Phantom mutation; even completing your catch as reality begins to fade...";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5500
+}};
+        Disturbance = 2;
         From = "Cultist Lair";
         Hint = "Purchasable at The Sanctum after reaching Level 350.";
         Icon = "rbxassetid://108306128914739";
@@ -1674,6 +2008,10 @@ local module = {
         LureSpeed = 0;
         MutationPool = {
             Phantom = 35
+        };
+        PreferredDisturbance = {
+            Event = "The Sanctum Hunt";
+            Risk = 6
         };
         Price = 2000000;
         ProgressEfficiency = 0.4;
@@ -1693,6 +2031,11 @@ local module = {
         Color = "0.45098, 0.807843, 0.352941";
         Control = 0.2;
         Description = "Ancient fangs lash at the hooked, forcing weight to rise by 45%. With a 20% rate for Shrouded, and 5% for Moss; the lurking Mossjaw waits to strike...";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 9500
+}};
+        Disturbance = 3;
         EnhancementPatches = {
             Mastery1 = {
                 FishingPassives = {
@@ -1728,6 +2071,10 @@ local module = {
             Mossy = 5;
             Shrouded = 20
         };
+        PreferredDisturbance = {
+            Event = "MossjawHunt";
+            Risk = 8
+        };
         Price = math.huge;
         ProgressEfficiency = 0.3;
         Resilience = 50;
@@ -1747,7 +2094,7 @@ local module = {
         Icon = "rbxassetid://140255299216735";
         LevelRequirement = 444;
         LineDistance = 444;
-        Luck = 444;
+        Luck = 244;
         LureSpeed = -344;
         Price = math.huge;
         Resilience = 44;
@@ -1765,6 +2112,10 @@ local module = {
         Color = "1, 0.666667, 1";
         Control = 0.25;
         Description = "A rod infused with spectral essence and alluring gems, allowing for 50% of fish to become Prismized.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 7500
+}};
         EnhancementPatches = {
             Mastery1 = {
                 Lure = 5;
@@ -1844,6 +2195,11 @@ local module = {
         Color = "0.741176, 0, 0";
         Control = -0.1;
         Description = "Cursed by the Deep Below, this twisted trident tempts fate with unnatural fortune. 50% chance to gain 5× your fish's base value, occasionally twisting the gain. 25% chance to summon Poseidon's shade, inflicting the Siren's Spite mutation to greatly increase weight.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
+        Disturbance = 4;
         EnhancementPatches = {
             Mastery1 = {
                 FishingPassives = {
@@ -1963,6 +2319,8 @@ local module = {
         Color = "0.603922, 0.666667, 0.745098";
         Control = 0.1234;
         Description = "Something seems off...";
+        From = "The Takeover";
+        Hint = "Obtained from the Takeover Challenger.";
         Icon = "rbxassetid://113112697751756";
         LineDistance = 123.4567;
         Luck = 123.4567;
@@ -1998,6 +2356,11 @@ local module = {
         Color = "0.854902, 0.654902, 0.921569";
         Control = 0;
         Description = "As fabulous as possible! Actually, even more than that. [For @GreenResolve]";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
+        Disturbance = 3;
         EnhancementPatches = {
             Mastery1 = {
                 WeightBoost = 40
@@ -2008,10 +2371,14 @@ local module = {
         Icon = "rbxassetid://104123308695417";
         LevelRequirement = 1000;
         LineDistance = 100;
-        Luck = 500;
+        Luck = 300;
         LureSpeed = 0;
         MutationPool = {
             Fabulous = 26
+        };
+        PreferredDisturbance = {
+            Event = "ColossalEtherealDragon";
+            Risk = 2
         };
         Price = math.huge;
         ReelGuiName = "fabulousrod";
@@ -2026,6 +2393,10 @@ local module = {
         Color = "1, 1, 1";
         Control = 0.12;
         Description = "A bone-ridden rod steeped in depth-bound sorrow, growing stronger the further it descends into the ocean's shadow.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
         FishingPassives = {
             FallenRod = {
                 DEFAULT_SIZE_PENALTY = 0.25;
@@ -2086,7 +2457,7 @@ local module = {
         Icon = "rbxassetid://116839759525452";
         LevelRequirement = 1000;
         LineDistance = 50;
-        Luck = 319;
+        Luck = 219;
         LureSpeed = 25;
         Price = math.huge;
         ProgressEfficiency = 0.5;
@@ -2150,6 +2521,10 @@ local module = {
         Color = "1, 0.396078, 0.396078";
         Control = 0.05;
         Description = "Quick rod that seems to catch fish in a fly! You can tell it's fast from the racing stripes.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 100
+}};
         From = "Moosewood";
         Hint = "Purchasable at Moosewood.";
         Icon = "rbxassetid://113138996269908";
@@ -2170,6 +2545,10 @@ local module = {
         Color = "1, 1, 0.286275";
         Control = -0.01;
         Description = "Humming with energy, and a line glowing like a trail of fireflies in the night. +15% Progress Speed at Night.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 250
+}};
         FishingPassives = {
             Generic_TimeBoosts = {
                 Night = {
@@ -2299,6 +2678,10 @@ local module = {
         Color = "0.603922, 0.666667, 0.745098";
         Control = 0;
         Description = "Quite the weak and unreliable rod. But, it can get the job done!";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 100
+}};
         From = "Moosewood";
         Hint = "if ur seeing this ur cheating i think so stop doing that";
         Icon = "rbxassetid://111213855674680";
@@ -2315,6 +2698,10 @@ local module = {
         Color = "0.427451, 0.301961, 0.831373";
         Control = 0.05;
         Description = "Extremely lucky rod with an odd tendency to attract significantly rarer fish than usual.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 250
+}};
         From = "Roslit";
         Hint = "Purchasable at Roslit Bay.";
         Icon = "rbxassetid://115586953220364";
@@ -2348,6 +2735,10 @@ local module = {
         Color = "0.203922, 0.921569, 0.560784";
         Control = 0.15;
         Description = "A rod infused with untamed blooming spirits. Occasional slashes, & all caught fish have a 30% chance to be mutated with Bloom.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
         FishingPassives = {
             FreeSpiritRod = {
                 GemModelName = "FreeSpiritRod";
@@ -2373,6 +2764,10 @@ local module = {
         Color = "1, 0.776471, 0.952941";
         Control = 0.05;
         Description = "Made for friends and good times!\nWhile playing with a friend, provides a 10% chance to catch a Friend Fish.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         FishingPassives = {
             FriendlyPassive = {
                 FriendFishChance = 10
@@ -2399,6 +2794,10 @@ local module = {
         Color = "0.737255, 1, 0.745098";
         Control = 0.15;
         Description = "A peculiar rod infused with amphibian magic. Frogs appear applying a stacking luck boost for every perfect catch.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 250
+}};
         FishingPassives = {
             Frog = {
                 BOOSTS_PER_FROG = {
@@ -2520,6 +2919,10 @@ local module = {
         Color = "0.305882, 1, 0.305882";
         Control = 0;
         Description = "Has a 30% chance for fish to be Fungal, & a 70% chance for the rod to sprout suspicious spores, giving you Luck X for 45 seconds! Prettyy funky!";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         From = "Mushgrove";
         Hint = "Obtained from Agaric.";
         Icon = "rbxassetid://105992913914425";
@@ -2564,6 +2967,11 @@ local module = {
         Color = "0.0705882, 0.360784, 0.34902";
         Control = 0.17;
         Description = "Pulsing with energy and madness, some say the Dreamer himself occasionally awakens to seize a fish, with a 50% chance of Cursed Touch.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
+        Disturbance = 2;
         FishingPassives = {
             GreatDreamerRod = {
                 MaxTargetCatch = 3;
@@ -2589,6 +2997,10 @@ local module = {
         Color = "0.882353, 0.713726, 0.0431373";
         Control = 0.1;
         Description = "A relic of the Dead Mans Tale, with a moderate boost to experience... Has a 5% chance to apply the spirits of Oscar.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 9000
+}};
         From = "Ocean";
         Hint = "A secret of the Dead Mans Tale.";
         Icon = "rbxassetid://134829568024925";
@@ -2601,6 +3013,9 @@ local module = {
         };
         Price = 2500000;
         ProgressEfficiency = 0.3;
+        Requirements = {
+            DataInstanceRequiriment = {"Cache.DeadMansTale1", true, "An ancient curse prevents you from purchasing this now."}
+        };
         Resilience = 20;
         Strength = 100000;
         XpMultiply = 0.35;
@@ -2630,6 +3045,7 @@ local module = {
         Resilience = 0;
         Strength = 1000;
         Unpurchasable = true;
+        Unregistered = true;
     };
     ["Heaven's Rod"] = {
         BobberBottom = "1, 0.623529, 0.0941176";
@@ -2637,6 +3053,10 @@ local module = {
         Color = "0.745098, 0.54902, 0.0941176";
         Control = 0.2;
         Description = "A heavenly rod with glowing floating parts and a divine halo, emitting mythical particles and celestial animations. Has a 35% chance for fish to become Heavenly.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2000
+}};
         EnhancementPatches = {
             Mastery1 = {
                 ProgressSpeed = 10
@@ -2647,7 +3067,7 @@ local module = {
         Icon = "rbxassetid://102156621928069";
         LevelRequirement = 220;
         LineDistance = 70;
-        Luck = 225;
+        Luck = 250;
         LureSpeed = 60;
         MutationPool = {
             Heavenly = 35
@@ -2687,6 +3107,10 @@ local module = {
         Color = "0.603922, 0.666667, 0.745098";
         Control = 0.15;
         Description = "A frost-themed rod with glowing blue accents and icy particle effects. Has a 25% chance to mutate fish with Blighted.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Frigid Cavern";
         Hint = "Purchasable after flipping all frozen levers.";
         Icon = "rbxassetid://73713622640769";
@@ -2699,6 +3123,52 @@ local module = {
         Price = 65000;
         Resilience = 20;
         Strength = 75000;
+    };
+    ["Igneous Rupturer"] = {
+        BestiaryRequirement = {
+            Island = "Scoria Reach";
+            Requirement = 100
+        };
+        BobberBottom = "1, 0.866667, 0.207843";
+        BobberTop = "1, 0.4, 0";
+        ClientFishingPassives = {
+            IgneousRupturer = {
+            }
+        };
+        Color = "1, 0.4, 0";
+        Control = 0.3;
+        Description = "A blade forged in the heart of a living volcano, the Igneous Rupturer thrums with tectonic fury;\nIts strikes split the waters with molten spires, sometimes branding fish with the Igneous mutation.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 20000
+}};
+        Disturbance = 5;
+        Durability = 200;
+        FishingPassives = {
+            IgneousRupturer = {
+                DecayTime = 5;
+                HitInterval = 2.8
+            }
+        };
+        From = "Scoria Reach";
+        Hint = "Purchasable within the Volcanic Depths after completing the bestiary and reaching Level 500.";
+        Icon = "rbxassetid://87880062657159";
+        LevelRequirement = 500;
+        LineDistance = 200;
+        Luck = 100;
+        LureSpeed = 40;
+        MutationPool = {
+            Igneous = 30
+        };
+        PreferredDisturbance = {
+            Event = "Skeletal Leviathan";
+            Risk = 2
+        };
+        Price = 5000000;
+        ProgressEfficiency = 0.05;
+        ReelGuiName = "igneousrupturer";
+        Resilience = 85;
+        Strength = math.huge;
     };
     Illumina = {
         BobberBottom = "0.937255, 0.0627451, 1";
@@ -2724,6 +3194,7 @@ local module = {
         Control = 1;
         DEV = true;
         Description = "Telamon's favorite weapon from Sword Fight on the Heights. It is light, agile, and deadly.";
+        Disturbance = 25;
         Durability = 200;
         Icon = "rbxassetid://117278379103930";
         InstantCatch = true;
@@ -2775,6 +3246,7 @@ local module = {
         Resilience = 66;
         Strength = math.huge;
         Unpurchasable = true;
+        Unregistered = true;
     };
     ["Jinglestar Rod"] = {
         BobberBottom = "0.901961, 0.843137, 0.631373";
@@ -2839,6 +3311,11 @@ local module = {
         Color = "0.203922, 0.376471, 1";
         Control = 0.15;
         Description = "All fish caught are 30% bigger.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
+        Disturbance = 2;
         EnhancementPatches = {
             Mastery1 = {
                 ProgressSpeed = 20;
@@ -2862,6 +3339,11 @@ local module = {
         Color = "0.960784, 0.803922, 0.188235";
         Control = 0.2;
         Description = "Crafted from the tentacle of an ancient Kraken, this mysterious rod pulses with dark energy. Gives you a random Legendary/Mythical/Exotic fish every 5 catches. 20% chance of giving you 2x the amount of fish.  10% chance of giving you the Tentacle Surge mutation.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
+        Disturbance = 2;
         FishingPassives = {
             Generic_DuplicateFish = {
                 DuplicateChance = 20
@@ -2881,6 +3363,10 @@ local module = {
         LureSpeed = 40;
         MutationPool = {
             ["Tentacle Surge"] = 10
+        };
+        PreferredDisturbance = {
+            Event = "KrakenHunt";
+            Risk = 4
         };
         Price = 950000;
         Resilience = 15;
@@ -2929,6 +3415,11 @@ local module = {
         Color = "0.407843, 0.643137, 0.745098";
         Control = 0.1;
         Description = "A weaponized rod forged to withstand the wrath of Scylla, carving through its relentless assaults with unyielding force.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
+        Disturbance = 2;
         From = "Veil of the Forsaken";
         Hint = "Purchasable at Veil of the Forsaken.";
         Icon = "rbxassetid://129311484672118";
@@ -2936,6 +3427,10 @@ local module = {
         Luck = 180;
         LureSpeed = 15;
         MinDistanceToPurchase = 30;
+        PreferredDisturbance = {
+            Event = "ScyllaHunt";
+            Risk = 4
+        };
         Price = 350000;
         RequireWorkspaceAttributeToBeTrue = "MarianasVeilActive";
         Resilience = 10;
@@ -2952,7 +3447,7 @@ local module = {
                 TriggerOnMutations = {"Lobster"}
             }
         };
-        From = "Isle of New Beginnings";
+        From = "Waveborne";
         Icon = "rbxassetid://96060253091803";
         LineDistance = 20;
         Luck = 110;
@@ -2963,13 +3458,18 @@ local module = {
         Price = math.huge;
         Resilience = 10;
         Strength = 50000;
+        Unregistered = true;
     };
     ["Long Rod"] = {
         BobberBottom = "1, 1, 1";
         BobberTop = "0.52549, 0.14902, 0.14902";
         Color = "0.862745, 0.8, 0.654902";
         Control = -0.1;
-        Description = "Not the strongest, but it’s sure the longest! Is this really needed?";
+        Description = "Not the strongest, but it's sure the longest! Is this really needed?";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 100
+}};
         From = "Moosewood";
         Hint = "Purchasable at Moosewood.";
         Icon = "rbxassetid://106024079770744";
@@ -2986,6 +3486,10 @@ local module = {
         Color = "0.737255, 0.435294, 1";
         Control = -0.05;
         Description = "A radiant rod that channels the power of dreams, granting the Lucid mutation and rarely cloning catches; particularly under clear skies.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 4500
+}};
         FishingPassives = {
             Generic_WeatherBoosts = {
                 Clear = {
@@ -3025,6 +3529,10 @@ local module = {
         Color = "0.737255, 1, 0.745098";
         Control = 0.07;
         Description = "Seems to attract a handful of rare fish. Not sure why?.. Maybe I should buy a lottery ticket?";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 100
+}};
         From = "Moosewood";
         Hint = "Purchasable at Moosewood.";
         Icon = "rbxassetid://84169278146923";
@@ -3064,6 +3572,11 @@ local module = {
         Color = "0.270588, 0.92549, 1";
         Control = 0.1;
         Description = "Forged from the radiant crystals of the Luminescent Cavern, this blade hums with sealed brilliance; its true power is seemingly forbidden from awakening...";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2000
+}};
+        Disturbance = 2;
         From = "Luminescent Cavern";
         Hint = "Purchasable at the Luminescent Cavern after completing the bestiary and reaching Level 500.";
         Icon = "rbxassetid://91638236496957";
@@ -3071,6 +3584,10 @@ local module = {
         LineDistance = 150;
         Luck = 100;
         LureSpeed = 15;
+        PreferredDisturbance = {
+            Event = "ColossalBlueDragon";
+            Risk = 3
+        };
         Price = 1000000;
         Resilience = 12;
         Strength = 25000;
@@ -3091,9 +3608,9 @@ local module = {
         Hint = "Obtainable during Fischmas 2.";
         Icon = "rbxassetid://132589475075099";
         LevelRequirement = 100;
-        LineDistance = 13;
+        LineDistance = 200;
         Luck = 85;
-        LureSpeed = 200;
+        LureSpeed = 20;
         MutationPool = {
             Frostbitten = 30
         };
@@ -3123,6 +3640,10 @@ local module = {
         Color = "1, 0.478431, 0.215686";
         Control = 0.15;
         Description = "Hot to the touch. Engulfed with a constant burning passion to fish. [Capable of fishing in lava, 35% chance for fish to become mutated with Ember]";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         Durability = 100;
         From = "Roslit Volcano";
         Hint = "Obtained from the Orc.";
@@ -3144,6 +3665,10 @@ local module = {
         Color = "0, 0.133333, 1";
         Control = 0.05;
         Description = "This rod has an advanced magnetic field, allowing it to quickly attract crates and loot.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 250
+}};
         EnhancementPatches = {
             Mastery1 = {
                 Lure = 70
@@ -3163,6 +3688,38 @@ local module = {
         Price = 15000;
         Resilience = 0;
         Strength = 10000;
+    };
+    ["Masterline Rod"] = {
+        BobberBottom = "1, 1, 1";
+        BobberTop = "1, 1, 1";
+        Color = "1, 1, 1";
+        Control = 0.15;
+        Description = "Only granted to truly dedicated Fischers;\nA true masterpiece, no catch is too strong for the Masterline...";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 100000
+}};
+        ForcedProgressEfficiency = 0.25;
+        From = "Full Bestiary & Journal Completion";
+        Hint = "Obtained by completing the entire Fisch Bestiary and Rod Journal";
+        Icon = "rbxassetid://95926377052917";
+        LevelRequirement = 1000;
+        LineDistance = 100;
+        Luck = 350;
+        LureSpeed = -900;
+        MutationPool = {
+            Ascended = 25;
+            Blessed = 2
+        };
+        NotLimited = true;
+        Price = math.huge;
+        ProgressEfficiency = 0.5;
+        Resilience = 50;
+        ShinyChance = 5;
+        SparklingChance = 5;
+        Strength = math.huge;
+        Unpurchasable = true;
+        Unregistered = true;
     };
     ["Merchant Rod"] = {
         BobberBottom = "0.729412, 0.72549, 0.65098";
@@ -3200,6 +3757,10 @@ local module = {
         Color = "0.756863, 0.27451, 1";
         Control = 0.1;
         Description = "Channels Merlin's rift-woven magic to trap unsuspecting fish between realms...";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 6500
+}};
         From = "Sunstone";
         Hint = "Obtained from Merlin himself.";
         Icon = "rbxassetid://109429886727687";
@@ -3214,16 +3775,41 @@ local module = {
         Strength = math.huge;
         Unpurchasable = true;
     };
+    ["Microphone Rod"] = {
+        BobberBottom = "0.0980392, 0.0980392, 0.0980392";
+        BobberTop = "0.282353, 0.282353, 0.282353";
+        Color = "0.772549, 0.772549, 0.772549";
+        Control = 0;
+        Description = "am i mutted?";
+        From = "Streamer Hideout";
+        Hint = "Obtainable during Twitch RB Battles event.";
+        Icon = "rbxassetid://126015973851188";
+        LineDistance = 15;
+        Luck = 80;
+        LureSpeed = 0;
+        MutationPool = {
+            Amped = 10
+        };
+        Price = math.huge;
+        Resilience = 30;
+        Strength = 200;
+        Unpurchasable = true;
+        Unregistered = true;
+    };
     ["Midas Rod"] = {
         BobberBottom = "1, 0.670588, 0.207843";
         BobberTop = "1, 0.721569, 0.243137";
         Color = "1, 0.886275, 0.32549";
         Control = 0.2;
         Description = "Blessed with the power of Midas. All caught fish will be golden.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         EnhancementPatches = {
             Mastery1 = {
                 ProgressSpeed = 10;
-                Resilience = 30
+                Resilience = 0
             }
         };
         From = "Ocean";
@@ -3300,6 +3886,10 @@ local module = {
         Color = "1, 0.192157, 0.623529";
         Control = 0.05;
         Description = "Blessed with the power of The Keepers. All fish have a 30% chance to be rainbow.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         EnhancementPatches = {
             Mastery1 = {
                 Lure = 35;
@@ -3347,7 +3937,7 @@ local module = {
         Icon = "rbxassetid://93443234340334";
         LevelRequirement = 1000;
         LineDistance = 444;
-        Luck = 444;
+        Luck = 244;
         LureSpeed = -19;
         MutationPool = {
             Bubblegum = 33.333333333333336;
@@ -3388,6 +3978,7 @@ local module = {
         Resilience = 66;
         Strength = 400000;
         Unpurchasable = true;
+        Unregistered = true;
     };
     ["New Years Rod"] = {
         BobberBottom = "0.121569, 0.105882, 0.0705882";
@@ -3431,6 +4022,10 @@ local module = {
         Color = "0.6, 0.552941, 0.47451";
         Control = 0.1;
         Description = "a kitty who trots by your side and sneakily snags extra fish when you're not looking!\n[extra power with clownfish cat toy!]";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
         FishingPassives = {
             ["Nico's Yarncaster"] = {
                 BobberMutationPool = {
@@ -3485,6 +4080,11 @@ local module = {
         Color = "1, 0.164706, 0.164706";
         Control = 0.23;
         Description = "Fisching 24/7/365. Are you okay?";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
+        Disturbance = 2;
         EnhancementPatches = {
             Mastery1 = {
                 Control = 0.28;
@@ -3539,6 +4139,10 @@ local module = {
         Color = "0.282353, 0.231373, 0.560784";
         Control = 0;
         Description = "Seems to wake up fish just by throwing the bobber in!-- Can catch nocturnal and diurnal fish at any time!";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 250
+}};
         From = "Vertigo";
         Hint = "Purchasable at Vertigo.";
         Icon = "rbxassetid://80259157365896";
@@ -3631,6 +4235,11 @@ local module = {
         Color = "0.615686, 0.815686, 1";
         Control = 0.17;
         Description = "Tempered in dreams and sharpened by peril, the Onirifalx reaps catches with unrivaled speed for those who can hold their ground.\n[For @animepunk]";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
+        Disturbance = 4;
         Durability = 200;
         EnhancementPatches = {
             Mastery1 = {
@@ -3672,12 +4281,16 @@ local module = {
         Icon = "rbxassetid://72800181932258";
         LevelRequirement = 1000;
         LineDistance = 777;
-        Luck = 777;
+        Luck = 277;
         LureSpeed = -677;
         MutationPool = {
             Levitas = 50;
             Puritas = 3;
             Sacratus = 7
+        };
+        PreferredDisturbance = {
+            Event = "DepthsAbsoluteDarkness";
+            Risk = 2
         };
         Price = math.huge;
         ProgressEfficiency = 0.7;
@@ -3920,6 +4533,10 @@ local module = {
         Color = "1, 0.384314, 0.341176";
         Control = 0.02;
         Description = "Embued with the spirit of the graceful Phoenix. All fish have a 40% chance to be set ablaze, with 10% possessing the power of the Eclipse.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Ancient Isle";
         Hint = "Purchasable at Ancient Isle.";
         Icon = "rbxassetid://88119712089208";
@@ -3955,7 +4572,7 @@ local module = {
         Durability = 200;
         Icon = "rbxassetid://134874876850242";
         LineDistance = 342;
-        Luck = 342;
+        Luck = 242;
         LureSpeed = -42;
         MutationPool = {
             Harmonized = 42
@@ -3974,6 +4591,10 @@ local module = {
         Color = "0.286275, 0.941176, 1";
         Control = 0;
         Description = "Made of ABS plastic; You can trust this rod will last you.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 100
+}};
         From = "Moosewood";
         Hint = "Purchasable at Moosewood.";
         Icon = "rbxassetid://94607096229906";
@@ -4011,6 +4632,7 @@ local module = {
         Color = "0.45098, 0.45098, 1";
         Control = 0.4;
         Description = "💫";
+        Disturbance = 1;
         FishingPassives = {
             ButterflyEntity = {
                 BUTTERFLY_MUTATION_POOL = {
@@ -4031,7 +4653,7 @@ local module = {
         LevelRequirement = 1000;
         LineDistance = 250;
         LocalPassive = "Polaris Serenade";
-        Luck = 400;
+        Luck = 300;
         LureSpeed = 0;
         MutationPool = {
             Serene = 18
@@ -4080,6 +4702,10 @@ local module = {
         Color = "0.960784, 0.803922, 0.188235";
         Control = 0.2;
         Description = "Blessed by the God of the Seas himself, this trident-inspired rod commands the ocean's bounty. 25% chance of receiving 75% of your fish value as a bonus. 10% chance of spawning Poseidon's ghost, giving your fish the King's Blessing mutation which boosts weight by 75-150%.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 7000
+}};
         FishingPassives = {
             Poseidon = {
                 GHOST_MODEL_NAME = "PoseidonRod";
@@ -4111,6 +4737,10 @@ local module = {
         Color = "0.603922, 0.666667, 0.745098";
         Control = 0;
         Description = "Counterpart to the Rapid Rod, with much better resilience!";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         From = "Ancient Archives";
         Hint = "Craftable at the Ancient Archives at Level 5.";
         Icon = "rbxassetid://137576340928631";
@@ -4167,6 +4797,10 @@ local module = {
         Color = "0.921569, 0.32549, 0.564706";
         Control = 0;
         Description = "Enhanced by the Rainbow energy! (20% chance for Rainbow mutation) Rainbow weather grants a 35% chance for the Rainbow mutation & +50% Progress Speed.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
         FishingPassives = {
             Generic_WeatherBoosts = {
                 Default = {
@@ -4210,6 +4844,10 @@ local module = {
         Color = "0.541176, 0.541176, 0.541176";
         Control = 0.1;
         Description = "?";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 10000
+}};
         FishingPassives = {
             RandomRod = {
                 HIGH_WEIGHT_MULTIPLIER = 2;
@@ -4231,7 +4869,7 @@ local module = {
         Hint = "Purchasable from the Daily Shopkeeper.";
         Icon = "rbxassetid://127719699084418";
         LineDistance = 25;
-        Luck = 1000;
+        Luck = 350;
         LureSpeed = 20;
         MutationPool = {
             Jackpot = 50;
@@ -4249,6 +4887,10 @@ local module = {
         Color = "1, 0.639216, 0.341176";
         Control = 0;
         Description = "Extremely fast rod that catches fish at record speeds! -It even has racing wings!";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 250
+}};
         From = "Roslit";
         Hint = "Purchasable at Roslit Bay.";
         Icon = "rbxassetid://106813564853250";
@@ -4306,6 +4948,10 @@ local module = {
         Color = "1, 0.698039, 0.34902";
         Control = 0.1;
         Description = "Crafted by a metal stronger than diamond, making it capable of fishing in any harmful liquid.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 250
+}};
         Durability = 200;
         From = "Desolate Deep";
         Hint = "Purchasable at a small pocket nearby the Desolate Deep.";
@@ -4323,12 +4969,17 @@ local module = {
         Color = "0.729412, 0.698039, 0.686275";
         Control = -0.1;
         Description = "A really old rod, found from the tombs of ancient isles, crafted out of ancient bone, but does it hold a mysterious power within it?";
+        Disturbance = 2;
         From = "Archaeological Hunt";
         Hint = "Obtainable during Archaeological Hunt.";
         Icon = "rbxassetid://126324838265333";
         LineDistance = 20;
         Luck = 125;
         LureSpeed = 20;
+        PreferredDisturbance = {
+            Event = "MegHunt";
+            Risk = 6
+        };
         Price = math.huge;
         Requirements = {
             GatesOpened = {"RelicRodGate"}
@@ -4353,6 +5004,11 @@ local module = {
         Color = "0, 1, 0.54902";
         Control = 0.1;
         Description = "A solemn staff that sings with arcane finality; measured strikes bring reward, but reckless hands invite erasure...";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 20000
+}};
+        Disturbance = 2;
         FishingPassives = {
             RequiemStaff = {
                 DefaultWeightMult = 0.4;
@@ -4372,6 +5028,10 @@ local module = {
         MutationPool = {
             Husk = 20
         };
+        PreferredDisturbance = {
+            Event = "Omnithal";
+            Risk = 3
+        };
         Price = math.huge;
         ReelGuiName = "requiem";
         Resilience = 63;
@@ -4386,6 +5046,10 @@ local module = {
         Color = "1, 0.294118, 0.0588235";
         Control = -0.01;
         Description = "Doubles the effects of all bait, and has a 60% chance to not consume bait, increasing the efficiency of every catch.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         From = "Ancient Archives";
         Hint = "Craftable at the Ancient Archives at Level 50.";
         Icon = "rbxassetid://87627878098236";
@@ -4420,6 +5084,11 @@ local module = {
         Color = "0.258824, 0.368627, 1";
         Control = 0.05;
         Description = "The Riptide Rod fills its Tide Meter by 1/3 with each Perfect Catch. At max, it enters `High Tide` for 5 casts. This will boost Lure Speed by 25% and provide a 30% chance to catch a high-rarity fish.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
+        Disturbance = 2;
         FishingPassives = {
             HighTide = {
                 AmountOfHighTide = 5;
@@ -4449,6 +5118,11 @@ local module = {
         Color = "1, 0.258824, 0.203922";
         Control = 0.15;
         Description = "This Rod was crafted by the Legendary King of The Depths... Legends say, every once in a while the Spirit of the King visits you to hand you a gift from the deep waters!";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 8000
+}};
+        Disturbance = 2;
         EnhancementPatches = {
             Mastery1 = {
                 FishingPassives = {
@@ -4483,6 +5157,10 @@ local module = {
         MutationPool = {
             Abyssal = 30
         };
+        PreferredDisturbance = {
+            Event = "DepthsAbsoluteDarkness";
+            Risk = 3
+        };
         Price = 750000;
         Resilience = 10;
         Strength = 30000;
@@ -4493,6 +5171,11 @@ local module = {
         Color = "1, 0.866667, 0.0980392";
         Control = 0.175;
         Description = "Every 30 seconds, a 5% chance summons a 'Royal Escort', boosting luck by 150% for 45 seconds. If you miss a catch, there's a 15% chance of immediately catching a higher rarity fish. All fish have a 60% chance to be Greedy.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
+        Disturbance = 3;
         FishingPassives = {
             RoyalEscort = {
                 ActivateChance = 5;
@@ -4529,6 +5212,10 @@ local module = {
         Color = "1, 0.501961, 0.976471";
         Control = 0.15;
         Description = "Originally created for the most magnificent royals, was lost in time and sealed away. Exalted Relics now have a 4x higher chance to be caught.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         EnhancementPatches = {
             Mastery1 = {
                 Generic_BoostFishChances = {
@@ -4545,6 +5232,7 @@ local module = {
                 }
             }
         };
+        From = "Mushgrove Swamp";
         Hint = "Obtainable by collecting a series of relics and returning them to a hidden area under Mushgrove Swamp.";
         Icon = "rbxassetid://93352333062527";
         LineDistance = 70;
@@ -4561,6 +5249,11 @@ local module = {
         Color = "0.192157, 0.607843, 1";
         Control = 0.22;
         Description = "All caught fish have a 25% chance for Tidal mutation\nAfter 3 perfect catches, triggers a special mode where a Meg jumps out of the Deeps with a higher-tier fish. Boasting a 25-50% size buff and the Tidal mutation.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
+        Disturbance = 4;
         EnhancementPatches = {
             Mastery1 = {
                 FishingPassives = {
@@ -4587,10 +5280,14 @@ local module = {
         Hint = "Craftable at the Ancient Archives at Level 700.";
         Icon = "rbxassetid://84655930411987";
         LineDistance = 100;
-        Luck = 145;
+        Luck = 175;
         LureSpeed = 20;
         MutationPool = {
             Tidal = 25
+        };
+        PreferredDisturbance = {
+            Event = "MegHunt";
+            Risk = 3
         };
         Price = math.huge;
         Resilience = 25;
@@ -4603,6 +5300,11 @@ local module = {
         Color = "0.396078, 0.580392, 0.678431";
         Control = -0.1;
         Description = "A legendary rod that defies limits, allowing a challenge for those seeking the ultimate reward. Has a 70% chance to apply the Wrath mutation to fish.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
+        Disturbance = 3;
         EnhancementPatches = {
             Mastery1 = {
                 ProgressSpeed = 20
@@ -4700,6 +5402,46 @@ local module = {
         Unpurchasable = true;
         Unregistered = true;
     };
+    ["Rose Rod"] = {
+        BobberBottom = "0.14902, 0.317647, 0.176471";
+        BobberTop = "0.647059, 0.152941, 0.152941";
+        ClientFishingPassives = {
+            Generic_Slashes = {
+                GradientColor = "0.772549, 0.141176, 0.14902";
+                IconName = "Rose";
+                SlashChance = 80;
+                SlashDamage = 1;
+                SoundName = "stabbystab";
+                SourceName = "Rose Rod";
+                SourceType = "rod";
+                StunTime = 0.35;
+                TriggerMode = "FishMove"
+            };
+            RoseRod = {
+            }
+        };
+        Color = "0.647059, 0.152941, 0.152941";
+        Control = 0.14;
+        Description = "Only obtainable during Valentides;\nA thorned promise of beauty and pain, blooming wherever its line is casted.";
+        FishingPassives = {
+            RoseRod = {
+                MutationPool = {
+                    Rose = 30
+                }
+            }
+        };
+        From = "Valentides 2";
+        Hint = "Obtainable during Valentides 2.";
+        Icon = "rbxassetid://138170572823538";
+        LineDistance = 20;
+        LocalCurrency = "Chocolates";
+        Luck = 65;
+        LureSpeed = 30;
+        Price = 2140;
+        Resilience = 2;
+        Strength = 15000;
+        Unregistered = true;
+    };
     ["Ruinous Oath"] = {
         BobberBottom = "0.188235, 0.188235, 0.32549";
         BobberTop = "0.960784, 0, 0";
@@ -4725,6 +5467,11 @@ local module = {
         Color = "1, 0, 0";
         Control = 0.08;
         Description = "Born from radiant crystals scorched by crimson fury, this blade blazes with unbound strength; its power no longer knows restraint...";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2000
+}};
+        Disturbance = 4;
         EnhancementPatches = {
             Mastery1 = {
                 WeightBoost = 15
@@ -4735,8 +5482,12 @@ local module = {
         Icon = "rbxassetid://106093081661329";
         LevelRequirement = 750;
         LineDistance = 150;
-        Luck = 500;
+        Luck = 300;
         LureSpeed = 5;
+        PreferredDisturbance = {
+            Event = "ColossalAncientDragon";
+            Risk = 3
+        };
         Price = 5000000;
         Resilience = 25;
         Strength = math.huge;
@@ -4798,6 +5549,7 @@ local module = {
         Color = "0.745098, 0.0980392, 0.133333";
         Control = 0.125;
         Description = "i am emo rod!";
+        Disturbance = 4;
         From = "Underground Music Venue";
         Hint = "Obtainable during Corruption admin event.";
         Icon = "rbxassetid://102286476761772";
@@ -4878,6 +5630,10 @@ local module = {
         Color = "0.741176, 0, 0";
         Control = -0.2;
         Description = "A rod steeped in sanguine essence, pulsing with forbidden vigor and granting a 30% chance for the Crimson mutation.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
         From = "Crimson Cavern";
         Hint = "Purchasable at the Crimson Cavern.";
         Icon = "rbxassetid://103144430550800";
@@ -4897,6 +5653,10 @@ local module = {
         Color = "0.960784, 0.803922, 0.188235";
         Control = 0;
         Description = "This rod has been on every pirate ship imaginable. Decent at everything, bad at nothing. Just like a pirate should! Has a 16% chance for fish to become Greedy.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Forsaken Shores";
         Hint = "Purchasable at Forsaken Shores.";
         Icon = "rbxassetid://74294381476830";
@@ -4916,6 +5676,10 @@ local module = {
         Color = "1, 0.72549, 0.45098";
         Control = 0.03;
         Description = "Boosts fish luck by 40% for the current season. It also has a 50% chance to grant a \"Seasonal\" mutation that changes the fish's colors based on the season it was caught. Seasonal Mutation Buffs -> Spring: 4.5x Sell Price, Summer: +25% Size, Autumn: 4x Sell Price, Winter: 2.5x Sell Price";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         From = "Ancient Archives";
         Hint = "Craftable at the Ancient Archives at Level 40.";
         Icon = "rbxassetid://90174044621323";
@@ -4937,6 +5701,11 @@ local module = {
         Color = "1, 0.666667, 0";
         Control = 0.25;
         Description = "TOUCH SOME GRASS BUDDY";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 15000
+}};
+        Disturbance = 3;
         EnhancementPatches = {
             Mastery1 = {
                 Control = 0.3;
@@ -4981,6 +5750,7 @@ local module = {
         Resilience = 10;
         Strength = 5000;
         Unpurchasable = true;
+        Unregistered = true;
     };
     ["Silly Fun Happy Rod"] = {
         BobberBottom = "0.462745, 0.0745098, 0.0862745";
@@ -5002,7 +5772,7 @@ local module = {
         Hint = "Obtained from Silly Clown.";
         Icon = "rbxassetid://55735329";
         LineDistance = math.huge;
-        Luck = 250;
+        Luck = 200;
         LureSpeed = (-math.huge);
         MutationPool = {
             Honked = 50
@@ -5063,6 +5833,11 @@ local module = {
         Color = "0.305882, 0.317647, 0.462745";
         Control = 0.03;
         Description = "Spirits occasionally leave fish behind...\nTheir presence subtly draws high-rarity fish closer...";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
+        Disturbance = 5;
         EnhancementPatches = {
             Mastery1 = {
                 FishingPassives = {
@@ -5125,6 +5900,7 @@ local module = {
         Resilience = -10;
         Strength = 150000;
         Unpurchasable = true;
+        Unregistered = true;
     };
     ["Starline Caster"] = {
         BobberBottom = "0, 0, 0";
@@ -5182,6 +5958,10 @@ local module = {
         Color = "1, 0.745098, 0.627451";
         Control = 0.05;
         Description = "Insanely stiff and strong. Can withstand immense pressure and tension. [Increases shake UI size]";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 250
+}};
         EnhancementPatches = {
             Mastery1 = {
                 Lure = 30;
@@ -5205,6 +5985,7 @@ local module = {
         Control = 0.5;
         DEV = true;
         Description = "i think nick dropped this...";
+        Disturbance = 5;
         Icon = "rbxassetid://118617961319261";
         LineDistance = math.huge;
         Luck = 100;
@@ -5221,6 +6002,10 @@ local module = {
         Color = "0.431373, 0.431373, 0.470588";
         Control = 0.2;
         Description = "A rock-hard rod made purely from stone, which also makes it quite heavy.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 100
+}};
         From = "Ancient Isle";
         Hint = "Purchasable at Ancient Isle.";
         Icon = "rbxassetid://84054593741673";
@@ -5237,6 +6022,10 @@ local module = {
         Color = "0.603922, 0.666667, 0.745098";
         Control = 0.25;
         Description = "A refined rod with snow-white highlights and shimmering blue effects. Has a 40% chance for fish to be Frozen, 20% chance for Sleet, & a 15% chance for Blighted.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
         EnhancementPatches = {
             Mastery1 = {
                 Lure = 25;
@@ -5269,6 +6058,10 @@ local module = {
         Color = "0.568627, 1, 0.45098";
         Control = 0.15;
         Description = "An ancient, coral-encrusted rod found in shipwreck depths, radiating faint power to lure rare fish. Every 10 catches, gain a 25% higher chance to pull up a Treasure Map! All fish have a 8% chance to be Sunken.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         EnhancementPatches = {
             Mastery1 = {
                 Lure = 35;
@@ -5392,6 +6185,10 @@ local module = {
         Color = "0.960784, 0.803922, 0.188235";
         Control = 0.15;
         Description = "Born from the essence of a perpetual storm, this rod moves faster than the eye can follow.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 4000
+}};
         From = "Atlantis";
         Hint = "Purchasable at the Sunken Depths after reaching Level 80.";
         Icon = "rbxassetid://97511542447827";
@@ -5478,9 +6275,15 @@ local module = {
         Color = "0.623529, 0.0941176, 0.0941176";
         Control = -0.2;
         Description = "A trident of ancient collapse, lashing the ocean in brutal bursts and dragging forgotten prey from the abyssal fog...";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 25000
+}};
+        Disturbance = 2;
         FishingPassives = {
             Thalassar = {
                 CATCH_INTERVAL = 25;
+                MAX_CATCHES = 10;
                 PASSIVE_MUTATION_POOL = {
                     Forgotten = 90;
                     ["Ocean's Ruin"] = 10
@@ -5491,12 +6294,16 @@ local module = {
         Hint = "Purchasable somewhere near the underwater cave of Tidefall; a part of Thalassar's Secret.";
         Icon = "rbxassetid://118254108935404";
         LineDistance = 200;
-        Luck = 450;
+        Luck = 250;
         LureSpeed = -100;
         MutationPool = {
             ["Ocean's Ruin"] = 30
         };
         MutationPoolCatchOnly = true;
+        PreferredDisturbance = {
+            Event = "Goldwraith";
+            Risk = 4
+        };
         Price = 14500000;
         ProgressEfficiency = -0.25;
         ReelGuiName = "thalassar'sruin";
@@ -5516,6 +6323,11 @@ local module = {
         Color = "0.215686, 0.227451, 0.290196";
         Control = 0.5;
         Description = "how could this possibly be a good idea?";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1500
+}};
+        Disturbance = 5;
         EnhancementPatches = {
             Mastery1 = {
                 FishingPassives = {
@@ -5591,6 +6403,10 @@ local module = {
         Color = "0.25098, 1, 0.4";
         Control = 0.08;
         Description = "After a Perfect Catch, there is a 36% chance for the next catch to become Lost.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         FishingPassives = {
             TheLostRod = {
                 MUTATION_CHANCE = 36;
@@ -5665,6 +6481,11 @@ local module = {
         Color = "0.129412, 0.478431, 1";
         Control = 0.4;
         Description = "A tide-forged hammer that answers strength with violence; every perfect strike echoes like a funeral bell beneath the waves.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
+        Disturbance = 2;
         FishingPassives = {
             TidemournerRod = {
             }
@@ -5677,6 +6498,10 @@ local module = {
         LureSpeed = 50;
         MutationPool = {
             Mourned = 35
+        };
+        PreferredDisturbance = {
+            Event = "Pliosaur";
+            Risk = 2
         };
         Price = math.huge;
         Resilience = 0;
@@ -5693,6 +6518,11 @@ local module = {
         Color = "0.486275, 0.380392, 0.807843";
         Control = 0.3;
         Description = "Tainted power seeps into the catch, slowing it with each struggle. A 15% toxic strike will paralyze it completely, granting 70% faster progress.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
+        Disturbance = 2;
         From = "Lost Jungle";
         Hint = "Craftable at Level 90 after completing the rising toxic water puzzle in the forgotten temple.";
         Icon = "rbxassetid://105529359815955";
@@ -5714,6 +6544,10 @@ local module = {
         Color = "0.392157, 0.776471, 0.811765";
         Control = 0.2;
         Description = "Handy fishing rod for honing your fishing skills. Remember, stay calm.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 100
+}};
         From = "Moosewood";
         Hint = "Purchasable at Moosewood.";
         Icon = "rbxassetid://130991861994310";
@@ -5754,6 +6588,10 @@ local module = {
         Color = "0, 0.619608, 0.882353";
         Control = 0.12;
         Description = "A radiant rod with shimmmering gems, has a 20% chance for Coinfall.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Treasure Island";
         Hint = "Purchasable at Treasure Island.";
         Icon = "rbxassetid://85629423257826";
@@ -5787,6 +6625,11 @@ local module = {
         Color = "1, 0.74902, 0.313726";
         Control = 0.05;
         Description = "Was originally the King of the Sea's way of defending his kingdom. All fish have a 30% chance to be Atlantean. [Has a chance to stab a fish while catching it, briefly stunning it and increasing progress]";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
+        Disturbance = 3;
         EnhancementPatches = {
             Mastery1 = {
                 Lure = 35
@@ -5815,6 +6658,10 @@ local module = {
         Color = "0.933333, 0, 0.0156863";
         Control = -0.37;
         Description = "Every cast is a challenge. Every catch, a victory. -RoReddo [Controlled/Herculean Enchant REQUIRED]";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
         Durability = 200;
         EnhancementPatches = {
             Mastery1 = {
@@ -5832,11 +6679,12 @@ local module = {
         Icon = "rbxassetid://88485869703847";
         LevelRequirement = 100;
         LineDistance = 150;
-        Luck = 999;
+        Luck = 299;
         LureSpeed = 20;
         MutationPool = {
             Tryhard = 100
         };
+        MutationPoolCatchOnly = true;
         Price = math.huge;
         ProgressEfficiency = 3;
         ReelGuiName = "tryhardrod";
@@ -5927,6 +6775,10 @@ local module = {
         Color = "0.203922, 0.921569, 0.560784";
         Control = 0.1;
         Description = "A rod entwined with nature's will. Has a 20% chance to sprout a tree, blessing each catch with triple its worth.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         FishingPassives = {
             VerdantShearRod = {
                 CALCULATED_SYNC = 0.55;
@@ -6027,6 +6879,10 @@ local module = {
         Color = "0.360784, 0.647059, 0.282353";
         Control = 0.1;
         Description = "Vines twist across the line, halting prey in its tracks. In the last 30%, the fish is bound, with a 30% chance of gaining a Vined form. [+10% Forced Progress Speed]";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         ForcedProgressEfficiency = 0.1;
         From = "Lost Jungle";
         Hint = "Craftable at Level 70 after completing the vine puzzle in the forgotten temple.";
@@ -6048,6 +6904,11 @@ local module = {
         Color = "1, 0.666667, 0";
         Control = 0.1;
         Description = "A rod forged in the heart of molten fury, granting a 25% chance for the Ashen Fortune mutation.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2000
+}};
+        Disturbance = 1;
         Durability = 100;
         From = "Volcanic Vents";
         Hint = "Purchasable at Volcanic Vents.";
@@ -6070,6 +6931,10 @@ local module = {
         Color = "0.8, 0.709804, 1";
         Control = 0.08;
         Description = "A rod forged by an ancient civilization, capable of mass destruction. All fish have a 35% chance to be fossilized. [Lasers fish with an orbital cannon].";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         From = "Ancient Archives";
         Hint = "Craftable at the Ancient Archives at Level 80.";
         Icon = "rbxassetid://93425956419131";
@@ -6103,6 +6968,11 @@ local module = {
         Color = "0.87451, 0, 0";
         Control = 0;
         Description = "Forged in malice, its fangs bite slow but devastatingly deep; every strike leaves ruin in its wake.\nHas a 30% chance for the Solarblaze mutation.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 1000
+}};
+        Disturbance = 2;
         From = "Crimson Cavern";
         Hint = "Purchasable at Level 300 within the Crimson Cavern during Eclipse weather.";
         Icon = "rbxassetid://72248252695511";
@@ -6132,6 +7002,10 @@ local module = {
         Color = "0.403922, 1, 0.623529";
         Control = 0.17;
         Description = "Entwined with blooming vines and the essence of the wild. Fish have a 30% chance to be drawn to nature.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 500
+}};
         From = "Terrapin";
         Hint = "Purchasable at Terrapin Island.";
         Icon = "rbxassetid://116994808867429";
@@ -6151,6 +7025,10 @@ local module = {
         Color = "0.866667, 0.807843, 0.360784";
         Control = 0.055;
         Description = "May you slash with all the colors of the wind.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 5000
+}};
         FishingPassives = {
             Generic_WeatherBoosts = {
                 Windy = {
@@ -6165,7 +7043,7 @@ local module = {
         Icon = "rbxassetid://131474362599126";
         LevelRequirement = 800;
         LineDistance = 555;
-        Luck = 555;
+        Luck = 255;
         LureSpeed = -455;
         MutationPool = {
             Breezed = 30
@@ -6220,6 +7098,10 @@ local module = {
         Color = "0.211765, 0.184314, 0.0196078";
         Control = -0.02;
         Description = "A mystical rod that rewards skilled fishers, granting a stackable 5% XP bonus for every perfect catch in a row up to 80%.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 2500
+}};
         EnhancementPatches = {
             Mastery1 = {
                 FishingPassives = {
@@ -6288,6 +7170,11 @@ local module = {
         Color = "0.960784, 0.803922, 0.188235";
         Control = 0.05;
         Description = "Forged in the heart of Mount Olympus, this divine rod crackles with Zeus's lightning. Its power grants the ability to command storms, with a 90% chance to inflict the Electric Shock mutation on fish; all others are Charred.";
+        DiscoveryRewards = {{
+    Type = "XP";
+    Value = 4000
+}};
+        Disturbance = 2;
         EnhancementPatches = {
             Mastery1 = {
                 ProgressSpeed = 10
@@ -6360,10 +7247,10 @@ local module = {
     };
 
     -- Системные поля
-    RegisteredNumberOfRods = 116;
+    RegisteredNumberOfRods = 107;
 }
 
 return module
 -- Module: Rods
--- Total items: 217
+-- Total items: 226
 -- System fields: 0
