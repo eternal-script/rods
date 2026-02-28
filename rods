@@ -6,6 +6,7 @@ local module = {
         Control = 0.35;
         DEV = true;
         Description = "a hot, presumably super-sharp blade of 67 [Admin Rod, for @yvlyf]";
+        Durability = 999;
         FishingPassives = {
             ["???"] = {
             }
@@ -139,6 +140,7 @@ local module = {
         Control = 0.7;
         DEV = true;
         Description = "(っ҂ •)っ poison, or antidote ? [For @taiyakos - lea]";
+        Durability = 200;
         Icon = "rbxassetid://96738548007381";
         LineDistance = 333;
         Luck = 333;
@@ -468,10 +470,10 @@ local module = {
         Strength = 65000;
     };
     ["Azure Of Lagoon"] = {
-        BestiaryRequirement = {
-            Island = "Lost Jungle";
-            Requirement = 85
-        };
+        BestiaryRequirement = {{
+    Island = "Lost Jungle";
+    Requirement = 85
+}};
         BobberBottom = "1, 1, 1";
         BobberTop = "0.239216, 0.92549, 1";
         ClientFishingPassives = {
@@ -620,10 +622,10 @@ local module = {
         Unpurchasable = true;
     };
     ["Blazebringer Rod"] = {
-        BestiaryRequirement = {
-            Island = "Roslit Volcano";
-            Requirement = 80
-        };
+        BestiaryRequirement = {{
+    Island = "Roslit Volcano";
+    Requirement = 80
+}};
         BobberBottom = "1, 1, 1";
         BobberTop = "0.0901961, 0.0666667, 0";
         Color = "1, 0.533333, 0";
@@ -838,7 +840,7 @@ local module = {
         Description = "A friendly rod!\nWhile playing with a friend, all stats are increased by 30%!";
         FishingPassives = {
             BuddyBond = {
-                SkipStats = {"BaitEffectiveness", "TimeEffectiveness", "WeatherEffectiveness", "SeasonEffectiveness"};
+                SkipStats = {"BaitEffectiveness", "TimeEffectiveness", "WeatherEffectiveness", "SeasonEffectiveness", "StartingProgress"};
                 StatMultiplier = 1.3
             }
         };
@@ -896,10 +898,10 @@ local module = {
         Strength = 600;
     };
     ["Carrot Rod"] = {
-        BestiaryRequirement = {
-            Island = "Carrot Garden";
-            Requirement = 100
-        };
+        BestiaryRequirement = {{
+    Island = "Carrot Garden";
+    Requirement = 100
+}};
         BobberBottom = "1, 1, 1";
         BobberTop = "0.215686, 0.74902, 0.133333";
         Color = "1, 0.686275, 0.14902";
@@ -987,7 +989,7 @@ local module = {
         From = "Valentides 2";
         Hint = "Obtainable during Valentides 2.";
         Icon = "rbxassetid://101466087041681";
-        LineDistance = 15;
+        LineDistance = 50;
         Luck = 95;
         LureSpeed = -100;
         MutationPool = {
@@ -1279,10 +1281,10 @@ local module = {
         Unregistered = true;
     };
     ["Coral Rod"] = {
-        BestiaryRequirement = {
-            Island = "Coral Bastion";
-            Requirement = 50
-        };
+        BestiaryRequirement = {{
+    Island = "Coral Bastion";
+    Requirement = 50
+}};
         BobberBottom = "0.384314, 1, 0.403922";
         BobberTop = "1, 0.615686, 0.886275";
         Color = "1, 0.615686, 0.886275";
@@ -1396,10 +1398,10 @@ local module = {
         Unregistered = true;
     };
     Cryolash = {
-        BestiaryRequirement = {
-            Island = "Boreal Pines";
-            Requirement = 100
-        };
+        BestiaryRequirement = {{
+    Island = "Boreal Pines";
+    Requirement = 100
+}};
         BobberBottom = "1, 1, 1";
         BobberTop = "0.454902, 0.952941, 1";
         ClientFishingPassives = {
@@ -1503,6 +1505,7 @@ local module = {
         };
         Resilience = -5;
         Strength = math.huge;
+        Unpurchasable = true;
         Unregistered = true;
     };
     ["Cupid's Embrace"] = {
@@ -1543,6 +1546,26 @@ local module = {
         Unpurchasable = true;
         Unregistered = true;
     };
+    Cursor = {
+        BobberBottom = "0, 0, 0";
+        BobberTop = "1, 1, 1";
+        Color = "0, 0, 0";
+        Control = 0.404;
+        DEV = true;
+        Description = "click click click [lea was here...]";
+        Durability = 200;
+        Icon = "rbxassetid://96738548007381";
+        LineDistance = 404;
+        Luck = 404;
+        LureSpeed = -404;
+        Price = math.huge;
+        ProgressEfficiency = 0.4;
+        Resilience = 404;
+        Strength = 4444444444;
+        Unpurchasable = true;
+        Unregistered = true;
+        WeightBoost = 404;
+    };
     ["Dave Rod"] = {
         BobberBottom = "0.564706, 0.564706, 0.564706";
         BobberTop = "0.741176, 0.741176, 0.741176";
@@ -1570,10 +1593,10 @@ local module = {
         Unregistered = true;
     };
     ["Daybreaker Rod"] = {
-        BestiaryRequirement = {
-            Island = "Scoria Reach";
-            Requirement = 50
-        };
+        BestiaryRequirement = {{
+    Island = "Scoria Reach";
+    Requirement = 50
+}};
         BobberBottom = "0.176471, 0.160784, 0.117647";
         BobberTop = "1, 0.894118, 0.470588";
         Color = "1, 0.894118, 0.470588";
@@ -1588,7 +1611,7 @@ local module = {
         FishingPassives = {
             Daybreaker = {
                 HOT_ZONE_STAT_MULT = 2;
-                SKIP_STATS = {"BaitEffectiveness", "TimeEffectiveness", "WeatherEffectiveness", "SeasonEffectiveness"};
+                SKIP_STATS = {"BaitEffectiveness", "TimeEffectiveness", "WeatherEffectiveness", "SeasonEffectiveness", "StartingProgress"};
                 SOLAR_BASE_CHANCE = 25
             }
         };
@@ -2103,10 +2126,10 @@ local module = {
         Unregistered = true;
     };
     ["Ethereal Prism Rod"] = {
-        BestiaryRequirement = {
-            Island = "Veil of the Forsaken";
-            Requirement = 100
-        };
+        BestiaryRequirement = {{
+    Island = "Veil of the Forsaken";
+    Requirement = 100
+}};
         BobberBottom = "0.580392, 0.494118, 1";
         BobberTop = "0.47451, 0.313726, 0.74902";
         Color = "1, 0.666667, 1";
@@ -2493,14 +2516,14 @@ local module = {
                 InactiveMutationPool = {
                     Solarblaze = 10
                 };
-                OneDuplicateChance = 5;
+                OneDuplicateChance = 20;
                 ShowTimer = true;
                 TargetWeathers = {"Eclipse"};
                 TimerColor = "0, 0, 0";
                 TimerFont = "Enum.Font.Garamond";
                 TimerStrokeColor = "1, 0.666667, 0";
                 TimerText = "Eclipse Boost";
-                TwoDuplicateChance = 20
+                TwoDuplicateChance = 5
             }
         };
         From = "Leveling Up";
@@ -2536,10 +2559,10 @@ local module = {
         Strength = 175;
     };
     ["Firefly Rod"] = {
-        BestiaryRequirement = {
-            Island = "Castaway Cliffs";
-            Requirement = 40
-        };
+        BestiaryRequirement = {{
+    Island = "Castaway Cliffs";
+    Requirement = 40
+}};
         BobberBottom = "1, 1, 1";
         BobberTop = "0.345098, 0.258824, 0.137255";
         Color = "1, 1, 0.286275";
@@ -2713,10 +2736,10 @@ local module = {
         Strength = 3000;
     };
     ["Free Spirit Rod"] = {
-        BestiaryRequirement = {
-            Island = "Mineshaft";
-            Requirement = 100
-        };
+        BestiaryRequirement = {{
+    Island = "Mineshaft";
+    Requirement = 100
+}};
         BobberBottom = "1, 1, 1";
         BobberTop = "0.203922, 0.921569, 0.560784";
         ClientFishingPassives = {
@@ -2785,10 +2808,10 @@ local module = {
         Unpurchasable = true;
     };
     ["Frog Rod"] = {
-        BestiaryRequirement = {
-            Island = "Mushgrove";
-            Requirement = 50
-        };
+        BestiaryRequirement = {{
+    Island = "Mushgrove";
+    Requirement = 50
+}};
         BobberBottom = "1, 1, 1";
         BobberTop = "0.313726, 0.52549, 0.313726";
         Color = "0.737255, 1, 0.745098";
@@ -2958,10 +2981,10 @@ local module = {
         Unregistered = true;
     };
     ["Great Dreamer Rod"] = {
-        BestiaryRequirement = {
-            Island = "Cursed Isle";
-            Requirement = 50
-        };
+        BestiaryRequirement = {{
+    Island = "Cursed Isle";
+    Requirement = 50
+}};
         BobberBottom = "1, 1, 1";
         BobberTop = "0.819608, 0.682353, 0.121569";
         Color = "0.0705882, 0.360784, 0.34902";
@@ -3125,10 +3148,10 @@ local module = {
         Strength = 75000;
     };
     ["Igneous Rupturer"] = {
-        BestiaryRequirement = {
-            Island = "Scoria Reach";
-            Requirement = 100
-        };
+        BestiaryRequirement = {{
+    Island = "Scoria Reach";
+    Requirement = 100
+}};
         BobberBottom = "1, 0.866667, 0.207843";
         BobberTop = "1, 0.4, 0";
         ClientFishingPassives = {
@@ -3161,7 +3184,7 @@ local module = {
             Igneous = 30
         };
         PreferredDisturbance = {
-            Event = "Skeletal Leviathan";
+            Event = "SkeletalLeviathanHunt";
             Risk = 2
         };
         Price = 5000000;
@@ -3544,10 +3567,10 @@ local module = {
         Strength = 175;
     };
     ["Luminescent Oath"] = {
-        BestiaryRequirement = {
-            Island = "Luminescent Cavern";
-            Requirement = 100
-        };
+        BestiaryRequirement = {{
+    Island = "Luminescent Cavern";
+    Requirement = 100
+}};
         BobberBottom = "0.188235, 0.188235, 0.32549";
         BobberTop = "0.337255, 0.815686, 0.960784";
         ClientFishingPassives = {
@@ -3577,6 +3600,13 @@ local module = {
     Value = 2000
 }};
         Disturbance = 2;
+        FishingPassives = {
+            Generic_PerfectBoost = {
+                MutationPool = {
+                    Mastered = 100
+                }
+            }
+        };
         From = "Luminescent Cavern";
         Hint = "Purchasable at the Luminescent Cavern after completing the bestiary and reaching Level 500.";
         Icon = "rbxassetid://91638236496957";
@@ -3584,6 +3614,9 @@ local module = {
         LineDistance = 150;
         Luck = 100;
         LureSpeed = 15;
+        MutationPool = {
+            Luminescent = 15
+        };
         PreferredDisturbance = {
             Event = "ColossalBlueDragon";
             Risk = 3
@@ -3699,6 +3732,7 @@ local module = {
     Type = "XP";
     Value = 100000
 }};
+        Durability = 200;
         ForcedProgressEfficiency = 0.25;
         From = "Full Bestiary & Journal Completion";
         Hint = "Obtained by completing the entire Fisch Bestiary and Rod Journal";
@@ -3709,7 +3743,7 @@ local module = {
         LureSpeed = -900;
         MutationPool = {
             Ascended = 25;
-            Blessed = 2
+            Blessed = 10
         };
         NotLimited = true;
         Price = math.huge;
@@ -3784,7 +3818,7 @@ local module = {
         From = "Streamer Hideout";
         Hint = "Obtainable during Twitch RB Battles event.";
         Icon = "rbxassetid://126015973851188";
-        LineDistance = 15;
+        LineDistance = 30;
         Luck = 80;
         LureSpeed = 0;
         MutationPool = {
@@ -4563,27 +4597,88 @@ local module = {
             Generic_KillSimplified = {
             };
             ["Pinion's Aria"] = {
+                ACCEL_INCREASE = 0.15;
+                DROP_HEIGHT = 30;
+                DROP_INTERVAL = 2;
+                DROP_INTERVAL_REDUCE = 0.925;
+                DROP_RANGE = 0.3;
+                DROP_TIME = 2;
+                DROP_TIME_REDUCE = 0.975;
+                EXTERNAL_CONTROL_DEBUFF = 0.5;
+                FAIL_CONTROL_REDUCE = 0.15;
+                FAIL_FISH_SLOW_FACTOR = -0.5;
+                FAIL_PROGRESS_LOSS = -0.1;
+                FAIL_PROGRESS_LOSS_INCREASE = 0.1;
+                FAIL_PROGRESS_SPEED_REDUCE = -0.1;
+                MAX_ACCEL_BOOST = 2;
+                MIN_DROP_INTERVAL = 1;
+                MIN_DROP_TIME = 0.5;
+                RESONANCE_CONTROL_REDUCE_RATE = 0.075;
+                RESONANCE_FOLLOW_SPEED = 25;
+                RESONANCE_PROGRESS_SPEED_INCREASE = 0.01;
+                RESONANCE_REQUIREMENT = 7;
+                SUCCESS_CONTROL_INCREASE = 0.025;
+                SUCCESS_FISH_SLOW_FACTOR = 0.1;
+                SUCCESS_PROGRESS_BOOST = 3;
+                SUCCESS_PROGRESS_LOSS_REDUCTION = -0.025;
+                SUCCESS_PROGRESS_SPEED_INCREASE = 0.05
             }
         };
         Color = "0.788235, 0.721569, 1";
         Control = 0;
-        DEV = true;
-        Description = "All together, resonate once more.\n[for @ceIeranis]";
+        Description = "All together, resonate once more.";
         Durability = 200;
-        Icon = "rbxassetid://134874876850242";
+        EnhancementPatches = {
+            Mastery1 = {
+                ClientFishingPassives = {
+                    ["Pinion's Aria"] = {
+                        FAIL_CONTROL_REDUCE = 0.075;
+                        FAIL_FISH_SLOW_FACTOR = -0.5;
+                        FAIL_PROGRESS_LOSS = -0.05;
+                        FAIL_PROGRESS_LOSS_INCREASE = 0.05;
+                        FAIL_PROGRESS_SPEED_REDUCE = -0.075;
+                        RESONANCE_CONTROL_REDUCE_RATE = 0.08;
+                        RESONANCE_PROGRESS_SPEED_INCREASE = 0.015;
+                        SUCCESS_CONTROL_INCREASE = 0.035;
+                        SUCCESS_FISH_SLOW_FACTOR = 0.15;
+                        SUCCESS_PROGRESS_BOOST = 4;
+                        SUCCESS_PROGRESS_LOSS_REDUCTION = -0.05;
+                        SUCCESS_PROGRESS_SPEED_INCREASE = 0.075
+                    }
+                }
+            };
+            Mastery2 = {
+                MutationPool = {
+                    Harmonized = 62
+                };
+                ShinyChance = 22
+            }
+        };
+        FishingPassives = {
+            Generic_PerfectBoost = {
+                XpBoost = 1.6133333333333333
+            }
+        };
+        From = "Crystal Cove";
+        Hint = "Obtainable from the Underground Music Venue.";
+        Icon = "rbxassetid://96489369728202";
         LineDistance = 342;
         Luck = 242;
         LureSpeed = -42;
         MutationPool = {
             Harmonized = 42
         };
+        PreferredDisturbance = {
+            Event = "WyvernHunt";
+            Risk = 15
+        };
         Price = math.huge;
         ReelGuiName = "pinionsaria";
         Resilience = 4.2;
         ShinyChance = 14.2;
+        StartingProgress = 10;
         Strength = math.huge;
         Unpurchasable = true;
-        Unregistered = true;
     };
     ["Plastic Rod"] = {
         BobberBottom = "1, 0.94902, 0.364706";
@@ -4865,9 +4960,10 @@ local module = {
                 WEIGHT_CHANCE = 50
             }
         };
-        From = "Daily Shopkeeper";
-        Hint = "Purchasable from the Daily Shopkeeper.";
+        From = "Anywhere or Daily Shopkeeper";
+        Hint = "Purchasable from the Daily Shopkeeper or randomly around the sea.";
         Icon = "rbxassetid://127719699084418";
+        LevelRequirement = 100;
         LineDistance = 25;
         Luck = 350;
         LureSpeed = 20;
@@ -4875,11 +4971,10 @@ local module = {
             Jackpot = 50;
             Unlucky = 50
         };
-        Price = math.huge;
+        Price = 6506291;
         ReelGuiName = "randomrod";
         Resilience = 10;
         Strength = math.huge;
-        Unpurchasable = true;
     };
     ["Rapid Rod"] = {
         BobberBottom = "1, 1, 1";
@@ -5440,6 +5535,7 @@ local module = {
         Price = 2140;
         Resilience = 2;
         Strength = 15000;
+        Unpurchasable = true;
         Unregistered = true;
     };
     ["Ruinous Oath"] = {
@@ -5477,6 +5573,13 @@ local module = {
                 WeightBoost = 15
             }
         };
+        FishingPassives = {
+            Generic_PerfectBoost = {
+                MutationPool = {
+                    Mastered = 100
+                }
+            }
+        };
         From = "Crimson Cavern";
         Hint = "Purchasable at the Crimson Cavern after completing the shiny sparkling bestiary and reaching Level 750.";
         Icon = "rbxassetid://106093081661329";
@@ -5484,6 +5587,9 @@ local module = {
         LineDistance = 150;
         Luck = 300;
         LureSpeed = 5;
+        MutationPool = {
+            Luminescent = 25
+        };
         PreferredDisturbance = {
             Event = "ColossalAncientDragon";
             Risk = 3
@@ -6567,7 +6673,6 @@ local module = {
         };
         Color = "0.678431, 0.847059, 0.901961";
         Control = 0.15;
-        DEV = true;
         Description = "A serene flute-shaped rod that summons a cascade of musical notes with every catch, granting a 15% chance to bestow the Spirit mutation.";
         Icon = "rbxassetid://98333011934763";
         LineDistance = 50;
@@ -6580,7 +6685,6 @@ local module = {
         Resilience = 30;
         Strength = 8000;
         Unpurchasable = true;
-        Unregistered = true;
     };
     ["Treasure Rod"] = {
         BobberBottom = "0.901961, 0.768627, 0.0196078";
@@ -6766,10 +6870,10 @@ local module = {
         Unregistered = true;
     };
     ["Verdant Shear Rod"] = {
-        BestiaryRequirement = {
-            Island = "Lost Jungle";
-            Requirement = 75
-        };
+        BestiaryRequirement = {{
+    Island = "Lost Jungle";
+    Requirement = 75
+}};
         BobberBottom = "1, 1, 1";
         BobberTop = "0.203922, 0.921569, 0.560784";
         Color = "0.203922, 0.921569, 0.560784";
@@ -7247,10 +7351,10 @@ local module = {
     };
 
     -- Системные поля
-    RegisteredNumberOfRods = 107;
+    RegisteredNumberOfRods = 109;
 }
 
 return module
 -- Module: Rods
--- Total items: 226
+-- Total items: 227
 -- System fields: 0
